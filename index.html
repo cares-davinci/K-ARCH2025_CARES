@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-ARCH Mentoring Workshop 2025</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: #d3d3d3; /* 회색 여백 */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            width: 100%;
+            text-align: center;
+            background-color: #fff;
+            padding: 0px 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+            /* margin-bottom: 0px; */
+        }
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+        .content {
+            background-color: #fff;
+            width: 80%; /* 중앙 콘텐츠 너비 고정 */
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* 그림자 추가 */
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        ul {
+            list-style-type: disc;
+            margin: 0;
+            padding-left: 30px;
+            font-size: 1.2em; /* 글 크기 키움 */
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        ul li span {
+            display: block;
+            font-size: 0.7em;
+            font-style: italic;
+        }
+        ul li span2 {
+            display: inline;
+            font-size: 0.7em;
+        }
+        ul li a {
+            /* margin-left: 10px; */
+            font-size: 0.9em;
+            color: blue;
+            text-decoration: underline;
+        }        
+        .divider {
+            width: 100%;
+            height: 1px;
+            background-color: #7d7d7d;
+            margin: 10px 0;
+        }
+        
+        /* 🔹 초청석학 (인물 카드) 섹션 */
+        .profiles {
+        display: flex;
+        justify-content: center;    /* 가운데 정렬 */
+        align-items: flex-start;    /* 위쪽 정렬 */
+        flex-wrap: wrap;            /* 화면 좁아지면 줄바꿈 */
+        gap: 40px;                  /* 카드 간 간격 */
+        margin-top: 10px;
+        }
+
+        .person {
+        width: 30%;                 /* 화면 넓을 땐 3등분 */
+        max-width: 360px;
+        min-width: 250px;           /* 줄바꿈 기준 */
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        }
+
+        .person img {
+        width: 160px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 8%;
+        margin-bottom: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .person h3 {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 600;
+        min-height: 24px;
+        }
+
+        .person p {
+        margin: 6px 0 0;
+        font-size: 16px;
+        line-height: 1.4;
+        color: #374151;
+        min-height: 40px; /* 직업이 한 줄이어도 카드 높이 일정 */
+        }
+
+        /* 🔹 반응형: 화면이 좁아질 때 카드 크기 자동 조정 */
+        @media (max-width: 900px) {
+        .person {
+            width: 45%; /* 2열 */
+        }
+        }
+        @media (max-width: 600px) {
+        .person {
+            width: 90%; /* 1열 */
+        }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="imgs/door.jpg" alt="프로그램 일정 헤더 이미지">
+    </header>
+    <div class="content">
+        <h1>일시 및 장소</h1>
+        <ul>
+        <li><h3>2025년 10월 19일 일요일 13:20~17:00</h3></li>
+        <li><h3>롯데호텔 서울 Garnet (37F)</h3></li>
+        </ul>
+        <h1>주관</h1>
+        <ul>
+            <li><h3>서울대학교 차세대데이터센터 연구센터</h3></li>
+        </ul>
+        <h1>조직위원</h1>
+        <ul>
+            <li><h3>김남승 교수(Univ. of Illinois, Urbana-Champaign), 김지홍 교수(서울대학교), 이재욱 교수(서울대학교), 안정호 교수(서울대학교)</h3></li>
+        </ul>
+        <h1>초대의 말씀</h1>
+        <h3> 컴퓨터 아키텍처를 중심으로 컴퓨터시스템 전반에 관심 있는 젊은 연구자들을 위해 해외 석학 세 분을 모시고 케아멘 2025를 개최합니다. 본 워크숍은 대학원생(석·박사)과 박사후연구원을 주 대상으로 합니다.</h3> 
+        <h3> 이번 워크숍은 초청 강연 3편과 패널 토론으로 구성됩니다. 초청 강연에서는 최신 연구 동향과 연구 철학을 소개하고, 이어지는 패널 토론에서는 성공적인 대학원 생활 팁과 졸업 이후 커리어 설계에 관한 석학들의 경험과 조언을 공유합니다.</h3>
+        <h3> 케아멘 2025는 연구의 깊이를 더하고, 졸업 이후의 진로를 선명하게 그릴 수 있는 드문 기회입니다. 뜻있는 많은 분들의 관심과 참여를 바랍니다. </h3>
+        <div class="divider"></div>
+        <h1>초청석학 </h1>
+        <div class="profiles">
+            <div class="person">
+                <img src="imgs/Prof_Wen-mei_Hwu.jpg" alt="인물 1">
+                <h3>Prof. Wen-mei Hwu</h3>
+                <p>Emeritus Professor at UIUC</br>SR. Distinguished Researcher Scientist at NVIDIA</p>
+            </div>
+            <div class="person">
+                <img src="imgs/Prof_Babak_Falsafi.jpg" alt="인물 2">
+                <h3>Prof. Babak Falsafi</h3>
+                <p>Professor at EPFL</p>
+            </div>
+            <div class="person">
+                <img src="imgs/Prof_Murali_Annavaram.jpg" alt="인물 3">
+                <h3>Prof. Murali Annavaram</h3>
+                <p>Professor at University of Southern California</p>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <h1>프로그램 일정</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>시간</th>
+                    <th>프로그램</th>
+                    <th>발표자</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>13:20 ~ 13:30</td>
+                    <td>Welcome & Opening Remarks</td>
+                    <td>김지홍 교수</td>
+                </tr>
+                <tr>
+                    <td>13:30 ~ 14:15</td>
+                    <td>Near-Compute Storage and GPU Software Stack for Predictive AI Applications</td>
+                    <td>Prof. Wen-mei Hwu</td>
+                </tr>
+                <tr>
+                    <td>14:15 ~ 15:00</td>
+                    <td>What's Hot in Computer Architecture? Datacenters (literally)</td>
+                    <td>Prof. Babak Falsafi</td>
+                </tr>
+                <tr>
+                    <td>15:00 ~ 15:20</td>
+                    <td>Break</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15:20 ~ 16:05</td>
+                    <td>Building a Superconducting CPU: One Microarchitecture Block At a Time</td>
+                    <td>Prof. Murali Annavaram</td>
+                </tr>
+                <tr>
+                    <td>16:05 ~ 17:00</td>
+                    <td>Panel: How to be successful graduate students and then researchers /engineers in the computer architecture field?</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="text-align: right; font-size: 0.9em; font-style: italic;">※ 상기 프로그램은 사정에 따라 변경될 수 있습니다.</p>
+        <h1 style="margin-top: -10px;">발표 자료</h1>
+        <ul>
+            <li>
+                Near-Compute Storage and GPU Software Stack for Predictive AI Applications  [<a href="https://raw.githubusercontent.com/cares-davinci/KCC2025_CARES/main/scripts/3_XCENA_김주현.pdf" download>slides</a>]
+                <span>Prof. Wen-mei Hwu</span>      
+            </li>
+            <li>
+                What's Hot in Computer Architecture? Datacenters (literally) [<a href="https://raw.githubusercontent.com/cares-davinci/KCC2025_CARES/main/scripts/3_XCENA_김주현.pdf" download>slides</a>]
+                <span>Prof. Babak Falsafi</span>
+            </li>
+            <li>
+                Building a Superconducting CPU: One Microarchitecture Block At a Time  [<a href="https://raw.githubusercontent.com/cares-davinci/KCC2025_CARES/main/scripts/3_XCENA_김주현.pdf" download>slides</a>]
+                <span>Prof. Murali Annavaram</span>
+            </li>
+        </ul>
+    </div>
+    
+</body>
+</html>
